@@ -6,6 +6,9 @@ html {
 
 body {
     font-family: Roboto, sans-serif;
+       -webkit-perspective: 0px !important; 
+  -webkit-backface-visibility: visible !important;
+       -webkit-transform: translate3d(0,0,0);
 }
 
 .bg-image {
@@ -13,12 +16,6 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-       filter: none; 
--webkit-filter: blur(0px); 
--moz-filter: blur(0px); 
--ms-filter: blur(0px);
-filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
-       will-change: transform;
   }
 
   .bg-image-two {
@@ -26,12 +23,6 @@ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-         filter: none; 
--webkit-filter: blur(0px); 
--moz-filter: blur(0px); 
--ms-filter: blur(0px);
-filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
-         will-change: transform;
   }
 
   .column {

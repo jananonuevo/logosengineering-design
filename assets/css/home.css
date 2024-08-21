@@ -18,6 +18,7 @@ body {
 -moz-filter: blur(0px); 
 -ms-filter: blur(0px);
 filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+       will-change: transform;
   }
 
   .bg-image-two {
@@ -30,6 +31,7 @@ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
 -moz-filter: blur(0px); 
 -ms-filter: blur(0px);
 filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+         will-change: transform;
   }
 
   .column {

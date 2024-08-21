@@ -6,9 +6,6 @@ html {
 
 body {
     font-family: Roboto, sans-serif;
-       -webkit-perspective: 0px !important; 
-  -webkit-backface-visibility: visible !important;
-       -webkit-transform: translate3d(0,0,0);
 }
 
 .bg-image {

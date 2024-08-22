@@ -12,7 +12,6 @@ body {
     background-image: url('../img/drawingbg2.0.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
   }
 
   .bg-image-two {

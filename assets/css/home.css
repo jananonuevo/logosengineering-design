@@ -33,6 +33,10 @@ body {
     font-size: 120%;
 }
 
+#services{
+    max-width: 80em;
+}
+
 .servicesimg{
     width: 100%;
     height:45%;

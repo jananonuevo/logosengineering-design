@@ -13,7 +13,6 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            // https://dashboard.emailjs.com/admin/account
             emailjs.init({
               publicKey: "lOMBJ7q5fxYhi8VOM",
             });
@@ -27,25 +26,9 @@
         emailjs.sendForm('service_jldketr', 'template_07r0qlf', this)
             .then(() => {
                 console.log('SUCCESS!');
-
-                // Display the success message modal
-                var successModal = document.getElementById("successModal");
-                var successModalContent = document.getElementById("successModalContent");
-                successModalContent.textContent = "Your message has been sent successfully!";
-                successModal.style.display = "block";
-
-                // Optional: Refresh the page after a delay
-                setTimeout(function() {
-                    window.location.reload();
-                }, 2000); // 2 seconds delay
+                window.location.reload();
             }, (error) => {
                 console.log('FAILED...', error);
-
-                // Display the error message modal
-                var errorModal = document.getElementById("errorModal");
-                var errorModalContent = document.getElementById("errorModalContent");
-                errorModalContent.textContent = "An error occurred while sending the email. Please try again later.";
-                errorModal.style.display = "block";
             });
     });
 };
@@ -53,9 +36,10 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg p-2" style="background-color: rgb(3, 37, 69); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
+        <nav class="navbar navbar-expand-lg p-2" style="background-color: white; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
             <div class="mx-3" style="border-right: 1px solid white">
-                <b><a class="navbar-brand" href="#" style="color: white">Logos Engineering & Design</a></b>
+                <img src="assets/img/FF_Logos Engineering & Design_LO.png" width="70" height="70">
+                <b><a class="navbar-brand" href="#" style="color: black">&nbsp&nbsp&nbsp&nbspLogos Engineering & Design</a></b>
             </div>
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -64,37 +48,32 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav" style="color: white">
                 <li class="nav-item active">
-                  <a class="nav-link mx-3" href="#whoarewe" style="color: white">Who are we?</a>
+                  <a class="nav-link mx-3" href="#whoarewe" style="color:black">Who are we?</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-3" href="#services" style="color: white">Services</a>
+                  <a class="nav-link mx-3" href="#services" style="color: black">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-3" href="#contactus" style="color: white">Contact Us</a>
+                  <a class="nav-link mx-3" href="#contactus" style="color: black">Contact Us</a>
                 </li>
               </ul>
             </div>
+
+
           </nav>
         
           <header>
 
-            <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
-            <div class="overlay"></div>
-          
-            <!-- The HTML5 video element that will create the background video on the header -->
-            <video playsinline autoplay muted loop preload="auto">
+            
+            <video playsinline="playsinline" preload="auto" autoplay="autoplay" muted="muted" loop="loop">
               <source src="assets/vids/CADrafting.mp4" type="video/mp4">
               <source src="assets/vids/CADrafting.webm" type="video/webm">
-                Video not supported.
             </video>
           
-            <!-- The header content -->
-            <div class="container h-100">
-              <div class="d-flex h-100 text-center align-items-center">
-                <div class="w-100 text-white">
-                  <h1 class="display-3">Logos Engineering and Design</h1>
-                  <img class='my-3' src="assets/img/FF_Logos Engineering & Design_LO.png" width="100" height="100">
-                  <p class="lead mb-0">We specialize in telecom layout design, including new fiber optic paths, repairs, and ground infrastructure. Our services also extend to stone shop drawings and traffic control plans. We’re committed to providing excellent customer service nationwide.</p>
+            <div class="container h-100" style="margin-top: 10%">
+              <div class="d-flex h-100 align-items-center">
+                <div class="text-white" style="width:50%">
+                  <div style="background-color: black; opacity: 0.5"><p class="mb-0" style="margin-left:5%;">We specialize in various professional computer aided drafting services. <br>Catering to utilities, engineering, architectural & other technical fields. <br>Our commitment is to provide excellent customer experience nationwide.</p></div>
                 </div>
               </div>
             </div>
@@ -175,7 +154,7 @@
             
                                 <br>
             
-                                <center><input type="submit" value="Send" class="btn w-50" style="background-color: rgb(3, 37, 69); color: white"></center>
+                                <center><input type="submit" value="Send" class="btn w-50" style="background-color: rgb(3, 37, 69); color: white" data-toggle="modal" data-target="#myModal"></center>
                               </form>
                         </div>
                     </div>

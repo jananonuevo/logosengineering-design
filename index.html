@@ -25,10 +25,10 @@
 
         emailjs.sendForm('service_jldketr', 'template_07r0qlf', this)
             .then(() => {
-                console.log('SUCCESS!');
+                alert("Message sent.");
                 window.location.reload();
             }, (error) => {
-                console.log('FAILED...', error);
+                alert(error);
             });
     });
 };
@@ -36,10 +36,10 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg p-4" style="background-color: rgb(246, 244, 228); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);">
+        <nav class="navbar navbar-expand-lg p-3" style="background-color: rgb(238, 238, 236); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);">
             <div class="mx-3">
-                <img src="assets/img/FF_Logos Engineering & Design_LO.png" width="80" height="80">
-                <b><a class="navbar-brand" href="#" style="color: rgb(27, 26, 26)">&nbsp&nbsp&nbsp&nbspLogos Engineering & Design</a></b>
+                <img src="assets/img/FF_Logos Engineering & Design_LO.png" width="70" class="img-fluid">
+                <b><a class="navbar-brand" href="#">&nbsp&nbsp&nbsp&nbspLogos Engineering & Design</a></b>
             </div>
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -48,10 +48,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav" style="color: white">
                 <li class="nav-item">
-                  <a class="nav-link mx-3" href="#services" style="color: rgb(27, 26, 26)">Services</a>
+                  <a class="nav-link mx-3" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-3" href="#contactus" style="color: rgb(27, 26, 26)">Contact Us</a>
+                  <a class="nav-link mx-3" href="#contactus">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -164,7 +164,7 @@
         </div>
 
         <footer class="text-center text-lg-start bg-body-tertiary text-muted" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
-            <section class="d-flex justify-content-center justify-content-lg-between" style="background-color: rgb(3, 37, 69); color: white">
+            <section class="d-flex justify-content-center justify-content-lg-between" style="background-color: rgb(238, 238, 236); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);">
               <div class="container text-center text-md-start my-3">
                 <center>
                     © 2024 Copyright: <a class="text-reset fw-bold" href="index.html"> Logos Engineering & Design </a> 
